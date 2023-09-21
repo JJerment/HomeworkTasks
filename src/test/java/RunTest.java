@@ -30,7 +30,7 @@ public class RunTest {
     public void errorTest() {
         int x = 5;
         int y = 1;
-        int sum= x / y;
+        int sum = x / y;
         Assertions.assertTrue(sum == 10);
-        }
     }
+}

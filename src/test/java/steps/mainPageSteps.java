@@ -5,6 +5,7 @@ import elements.mainPageElements;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
+
 import java.time.Duration;
 
 public class mainPageSteps extends mainPageElements {

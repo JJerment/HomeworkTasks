@@ -3,6 +3,7 @@ import elements.mainPageElements;
 import hooks.webHooks;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 import static steps.mainPageSteps.*;
@@ -16,6 +17,7 @@ public class XpathTest extends webHooks {
         String searchResultsText = searchResults.getText();
         Assertions.assertTrue(searchResultsText.contains("Кошка"));
     }
+
     @Test
     public void OblakoTest() {
         open("https://mail.ru");
@@ -23,6 +25,7 @@ public class XpathTest extends webHooks {
         Assertions.assertTrue($x("//*[contains(text(), 'Добро пожаловать в Облако!')]").is(visible));
         cloud();
     }
+
     @Test
     public void PrivacyTest() {
         open("https://mail.ru");
